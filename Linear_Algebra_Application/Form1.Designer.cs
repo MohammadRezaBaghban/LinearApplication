@@ -179,6 +179,7 @@ namespace Linear_Algebra_Application
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 38F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(984, 554);
             this.Controls.Add(this.lb_Angle);
             this.Controls.Add(this.Btn_Angle);
@@ -197,7 +198,7 @@ namespace Linear_Algebra_Application
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Linear Algebra & Application";
             this.ResumeLayout(false);
             this.PerformLayout();
 
