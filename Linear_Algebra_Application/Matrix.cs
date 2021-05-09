@@ -25,13 +25,13 @@ namespace Linear_Algebra_Application
             {
                 sum += (int)Math.Pow(array[i], 2);
             }
-            return Math.Sqrt(sum);
+            return sum;
         }
 
         public static double Angle_Two_Vector(int[] array1, int[] array2)
         {
             var numerator = Dot_Product(array1, array2);
-            var denominator = Vector_Length(array1) * Vector_Length(array2);
+            var denominator = Math.Round(Math.Sqrt(Vector_Length(array1)) * Math.Sqrt(Vector_Length(array2)),2);
             return numerator/ denominator;
         }
 

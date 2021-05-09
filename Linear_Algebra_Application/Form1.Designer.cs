@@ -37,6 +37,12 @@ namespace Linear_Algebra_Application
             this.lb_array1 = new System.Windows.Forms.Label();
             this.lb_array2 = new System.Windows.Forms.Label();
             this.btn_Vector2 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.lb_VectorLength = new System.Windows.Forms.Label();
+            this.btn_DotProdoct = new System.Windows.Forms.Button();
+            this.lb_DotProduct = new System.Windows.Forms.Label();
+            this.Btn_Angle = new System.Windows.Forms.Button();
+            this.lb_Angle = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBox1
@@ -99,7 +105,7 @@ namespace Linear_Algebra_Application
             // lb_array2
             // 
             this.lb_array2.AutoSize = true;
-            this.lb_array2.Location = new System.Drawing.Point(603, 170);
+            this.lb_array2.Location = new System.Drawing.Point(603, 141);
             this.lb_array2.Name = "lb_array2";
             this.lb_array2.Size = new System.Drawing.Size(106, 38);
             this.lb_array2.TabIndex = 6;
@@ -115,11 +121,71 @@ namespace Linear_Algebra_Application
             this.btn_Vector2.UseVisualStyleBackColor = true;
             this.btn_Vector2.Click += new System.EventHandler(this.btn_Vector2_Click);
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(146, 280);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(332, 55);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "Vector Length";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // lb_VectorLength
+            // 
+            this.lb_VectorLength.AutoSize = true;
+            this.lb_VectorLength.Location = new System.Drawing.Point(496, 288);
+            this.lb_VectorLength.Name = "lb_VectorLength";
+            this.lb_VectorLength.Size = new System.Drawing.Size(0, 38);
+            this.lb_VectorLength.TabIndex = 9;
+            // 
+            // btn_DotProdoct
+            // 
+            this.btn_DotProdoct.Location = new System.Drawing.Point(146, 357);
+            this.btn_DotProdoct.Name = "btn_DotProdoct";
+            this.btn_DotProdoct.Size = new System.Drawing.Size(332, 55);
+            this.btn_DotProdoct.TabIndex = 10;
+            this.btn_DotProdoct.Text = "Dot Product";
+            this.btn_DotProdoct.UseVisualStyleBackColor = true;
+            this.btn_DotProdoct.Click += new System.EventHandler(this.btn_DotProdoct_Click);
+            // 
+            // lb_DotProduct
+            // 
+            this.lb_DotProduct.AutoSize = true;
+            this.lb_DotProduct.Location = new System.Drawing.Point(496, 374);
+            this.lb_DotProduct.Name = "lb_DotProduct";
+            this.lb_DotProduct.Size = new System.Drawing.Size(0, 38);
+            this.lb_DotProduct.TabIndex = 11;
+            // 
+            // Btn_Angle
+            // 
+            this.Btn_Angle.Location = new System.Drawing.Point(146, 434);
+            this.Btn_Angle.Name = "Btn_Angle";
+            this.Btn_Angle.Size = new System.Drawing.Size(332, 55);
+            this.Btn_Angle.TabIndex = 12;
+            this.Btn_Angle.Text = "Angle";
+            this.Btn_Angle.UseVisualStyleBackColor = true;
+            this.Btn_Angle.Click += new System.EventHandler(this.Btn_Angle_Click);
+            // 
+            // lb_Angle
+            // 
+            this.lb_Angle.AutoSize = true;
+            this.lb_Angle.Location = new System.Drawing.Point(496, 442);
+            this.lb_Angle.Name = "lb_Angle";
+            this.lb_Angle.Size = new System.Drawing.Size(0, 38);
+            this.lb_Angle.TabIndex = 13;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 38F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1218, 424);
+            this.ClientSize = new System.Drawing.Size(984, 554);
+            this.Controls.Add(this.lb_Angle);
+            this.Controls.Add(this.Btn_Angle);
+            this.Controls.Add(this.lb_DotProduct);
+            this.Controls.Add(this.btn_DotProdoct);
+            this.Controls.Add(this.lb_VectorLength);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.btn_Vector2);
             this.Controls.Add(this.lb_array2);
             this.Controls.Add(this.lb_array1);
@@ -147,6 +213,12 @@ namespace Linear_Algebra_Application
         private System.Windows.Forms.Label lb_array1;
         private System.Windows.Forms.Label lb_array2;
         private System.Windows.Forms.Button btn_Vector2;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label lb_VectorLength;
+        private System.Windows.Forms.Button btn_DotProdoct;
+        private System.Windows.Forms.Label lb_DotProduct;
+        private System.Windows.Forms.Button Btn_Angle;
+        private System.Windows.Forms.Label lb_Angle;
     }
 }
 

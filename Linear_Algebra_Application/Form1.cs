@@ -9,6 +9,9 @@ namespace Linear_Algebra_Application
     public partial class Form1 : Form
     {
         List<Vector> memberRating;
+        private Vector vector1 = null;
+        private Vector vector2 = null;
+
         public Form1()
         {
             InitializeComponent();
@@ -45,7 +48,7 @@ namespace Linear_Algebra_Application
             {
                 var selectedItem = vectorList.SelectedItem as Vector;
                 lb_array1.Text = $"Array 1: {selectedItem.ToString()}";
-                lb_array1.Tag = selectedItem;
+                vector1 = selectedItem;
             }
         }
 
@@ -55,14 +58,47 @@ namespace Linear_Algebra_Application
             {
                 var selectedItem = vectorList.SelectedItem as Vector;
                 lb_array2.Text = $"Array 2: {selectedItem.ToString()}";
-                lb_array2.Tag = selectedItem;
+                vector2 = selectedItem;
+            }
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            if (vectorList.SelectedItem != null)
+            {
+                var selectedItem = vectorList.SelectedItem as Vector;
+                var lengthPower2 = Matrix.Vector_Length(selectedItem.value);
+                lb_VectorLength.Text = $"squre root of {lengthPower2} = {Math.Round(Math.Sqrt(lengthPower2),2)}";
+            }
+        }
+
+        private void btn_DotProdoct_Click(object sender, EventArgs e)
+        {
+            if (vector2 == null || vector1 == null) 
+                MessageBox.Show("Select Two vector of same size");
+            else
+            {
+                var dotProduct = Matrix.Dot_Product(vector1.value, vector2.value);
+                lb_DotProduct.Text = $"Dot Product = {dotProduct}";
+            }
+        }
+
+        private void Btn_Angle_Click(object sender, EventArgs e)
+        {
+            if (vector2 == null || vector1 == null)
+                MessageBox.Show("Select Two vector of same size");
+            else
+            {
+                var cosine = Math.Round(Matrix.Angle_Two_Vector(vector1.value, vector2.value),3);
+                lb_Angle.Text = $"Cosine = {cosine}\n" +
+                                $"Angle in Degree = {Matrix.Cosine_Reverse(cosine)}";
             }
         }
     }
 
     public class Vector
     {
-        private int[] value;
+        public int[] value;
 
         public Vector(int[] array) => this.value = array;
 
