@@ -6,3 +6,5 @@ C:\Mrbh\University\TU Eindhoven\Pre-master\2IC60 - Linear Algebra & Applications
 C:\Mrbh\University\TU Eindhoven\Pre-master\2IC60 - Linear Algebra & Applications\Programming\Linear_Algebra_Application\Linear_Algebra_Application\obj\Debug\Linear_Algebra_Application.csproj.CoreCompileInputs.cache
 C:\Mrbh\University\TU Eindhoven\Pre-master\2IC60 - Linear Algebra & Applications\Programming\Linear_Algebra_Application\Linear_Algebra_Application\obj\Debug\Linear_Algebra_Application.exe
 C:\Mrbh\University\TU Eindhoven\Pre-master\2IC60 - Linear Algebra & Applications\Programming\Linear_Algebra_Application\Linear_Algebra_Application\obj\Debug\Linear_Algebra_Application.pdb
+C:\Mrbh\University\TU Eindhoven\Pre-master\2IC60 - Linear Algebra & Applications\Programming\Linear_Algebra_Application\Linear_Algebra_Application\obj\Debug\Linear_Algebra_Application.csprojAssemblyReference.cache
+C:\Mrbh\University\TU Eindhoven\Pre-master\2IC60 - Linear Algebra & Applications\Programming\Linear_Algebra_Application\Linear_Algebra_Application\obj\Debug\Linear_Algebra_Application.Form1.resources
