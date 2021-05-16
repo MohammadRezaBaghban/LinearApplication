@@ -30,7 +30,6 @@ namespace Linear_Algebra_Application
         private void InitializeComponent()
         {
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.vectorList = new System.Windows.Forms.ListBox();
             this.btn_Vector1 = new System.Windows.Forms.Button();
@@ -47,25 +46,15 @@ namespace Linear_Algebra_Application
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(146, 33);
+            this.textBox1.Location = new System.Drawing.Point(12, 16);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(528, 45);
             this.textBox1.TabIndex = 0;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 33);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 38);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Vector:";
-            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(705, 33);
+            this.button1.Location = new System.Drawing.Point(571, 16);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(115, 46);
             this.button1.TabIndex = 2;
@@ -77,7 +66,7 @@ namespace Linear_Algebra_Application
             // 
             this.vectorList.FormattingEnabled = true;
             this.vectorList.ItemHeight = 38;
-            this.vectorList.Location = new System.Drawing.Point(146, 101);
+            this.vectorList.Location = new System.Drawing.Point(12, 84);
             this.vectorList.Name = "vectorList";
             this.vectorList.Size = new System.Drawing.Size(332, 156);
             this.vectorList.TabIndex = 3;
@@ -85,7 +74,7 @@ namespace Linear_Algebra_Application
             // 
             // btn_Vector1
             // 
-            this.btn_Vector1.Location = new System.Drawing.Point(484, 103);
+            this.btn_Vector1.Location = new System.Drawing.Point(350, 86);
             this.btn_Vector1.Name = "btn_Vector1";
             this.btn_Vector1.Size = new System.Drawing.Size(82, 66);
             this.btn_Vector1.TabIndex = 4;
@@ -96,7 +85,7 @@ namespace Linear_Algebra_Application
             // lb_array1
             // 
             this.lb_array1.AutoSize = true;
-            this.lb_array1.Location = new System.Drawing.Point(603, 103);
+            this.lb_array1.Location = new System.Drawing.Point(469, 86);
             this.lb_array1.Name = "lb_array1";
             this.lb_array1.Size = new System.Drawing.Size(106, 38);
             this.lb_array1.TabIndex = 5;
@@ -105,7 +94,7 @@ namespace Linear_Algebra_Application
             // lb_array2
             // 
             this.lb_array2.AutoSize = true;
-            this.lb_array2.Location = new System.Drawing.Point(603, 141);
+            this.lb_array2.Location = new System.Drawing.Point(469, 151);
             this.lb_array2.Name = "lb_array2";
             this.lb_array2.Size = new System.Drawing.Size(106, 38);
             this.lb_array2.TabIndex = 6;
@@ -113,7 +102,7 @@ namespace Linear_Algebra_Application
             // 
             // btn_Vector2
             // 
-            this.btn_Vector2.Location = new System.Drawing.Point(484, 191);
+            this.btn_Vector2.Location = new System.Drawing.Point(350, 174);
             this.btn_Vector2.Name = "btn_Vector2";
             this.btn_Vector2.Size = new System.Drawing.Size(82, 66);
             this.btn_Vector2.TabIndex = 7;
@@ -123,7 +112,7 @@ namespace Linear_Algebra_Application
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(146, 280);
+            this.button2.Location = new System.Drawing.Point(12, 263);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(332, 55);
             this.button2.TabIndex = 8;
@@ -134,14 +123,14 @@ namespace Linear_Algebra_Application
             // lb_VectorLength
             // 
             this.lb_VectorLength.AutoSize = true;
-            this.lb_VectorLength.Location = new System.Drawing.Point(496, 288);
+            this.lb_VectorLength.Location = new System.Drawing.Point(362, 271);
             this.lb_VectorLength.Name = "lb_VectorLength";
             this.lb_VectorLength.Size = new System.Drawing.Size(0, 38);
             this.lb_VectorLength.TabIndex = 9;
             // 
             // btn_DotProdoct
             // 
-            this.btn_DotProdoct.Location = new System.Drawing.Point(146, 357);
+            this.btn_DotProdoct.Location = new System.Drawing.Point(12, 340);
             this.btn_DotProdoct.Name = "btn_DotProdoct";
             this.btn_DotProdoct.Size = new System.Drawing.Size(332, 55);
             this.btn_DotProdoct.TabIndex = 10;
@@ -152,14 +141,14 @@ namespace Linear_Algebra_Application
             // lb_DotProduct
             // 
             this.lb_DotProduct.AutoSize = true;
-            this.lb_DotProduct.Location = new System.Drawing.Point(496, 374);
+            this.lb_DotProduct.Location = new System.Drawing.Point(362, 357);
             this.lb_DotProduct.Name = "lb_DotProduct";
             this.lb_DotProduct.Size = new System.Drawing.Size(0, 38);
             this.lb_DotProduct.TabIndex = 11;
             // 
             // Btn_Angle
             // 
-            this.Btn_Angle.Location = new System.Drawing.Point(146, 434);
+            this.Btn_Angle.Location = new System.Drawing.Point(12, 417);
             this.Btn_Angle.Name = "Btn_Angle";
             this.Btn_Angle.Size = new System.Drawing.Size(332, 55);
             this.Btn_Angle.TabIndex = 12;
@@ -170,7 +159,7 @@ namespace Linear_Algebra_Application
             // lb_Angle
             // 
             this.lb_Angle.AutoSize = true;
-            this.lb_Angle.Location = new System.Drawing.Point(496, 442);
+            this.lb_Angle.Location = new System.Drawing.Point(362, 425);
             this.lb_Angle.Name = "lb_Angle";
             this.lb_Angle.Size = new System.Drawing.Size(0, 38);
             this.lb_Angle.TabIndex = 13;
@@ -180,7 +169,7 @@ namespace Linear_Algebra_Application
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 38F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(984, 554);
+            this.ClientSize = new System.Drawing.Size(696, 500);
             this.Controls.Add(this.lb_Angle);
             this.Controls.Add(this.Btn_Angle);
             this.Controls.Add(this.lb_DotProduct);
@@ -193,7 +182,6 @@ namespace Linear_Algebra_Application
             this.Controls.Add(this.btn_Vector1);
             this.Controls.Add(this.vectorList);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -207,7 +195,6 @@ namespace Linear_Algebra_Application
         #endregion
 
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ListBox vectorList;
         private System.Windows.Forms.Button btn_Vector1;

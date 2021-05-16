@@ -20,9 +20,13 @@ namespace Linear_Algebra_Application
                 new Vector(new[] { 2, 1, 2, -2, -1, 0, 1, 0, -1, 1 }),
                 new Vector(new[] { 2, -2, 1, 2, 1, -1, 0, 2, -1, 1 }),
                 new Vector(new[] { 1, 1, -2, 0, -2, -2, 2, 2, 1, 2 }),
-                new Vector(new[] { 1, 0, -2, 1, 2, 2, 1, 0, -1, -2 }),
+                new Vector(new[] { 1, 0, -2, 1, 2, 2, 1, 0, -1, -2 }, "Closest"),
                 new Vector(new[] { 1, -1, 1, 1, 2, 0, 2, 1, 0, 1 }),
-                new Vector(new[] { 2, 1, -2, 1, 0, 0, 0, 0, 0, 0 })
+                new Vector(new[] { 2, 1, -2, 1, 0, 3, 3, 3, 3, 3 }, "Guess"),
+                new Vector(new[] { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 }, "I Vector"),
+                new Vector(new[] {  2, 1, -2, 1, 0, 0, -1, 2, 1,1}, "Actual"),
+
+
             };
 
             memberRating.ForEach(x=> vectorList.Items.Add(x));
@@ -99,12 +103,14 @@ namespace Linear_Algebra_Application
     public class Vector
     {
         public int[] value;
+        public string name;
 
-        public Vector(int[] array) => this.value = array;
-
-        public override string ToString()
+        public Vector(int[] array, string name = "No-Name")
         {
-            return "[" + Join(",", value) + "]";
+            value = array;
+            this.name = name;
         }
+
+        public override string ToString() => name +": [" + Join(",", value) + "]";
     }
 }
