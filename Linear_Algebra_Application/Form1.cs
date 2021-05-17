@@ -17,14 +17,18 @@ namespace Linear_Algebra_Application
             InitializeComponent();
             memberRating = new List<Vector>()
             {
+                new Vector(new[] { 1, 3, 4, 2, 5 },"A"),
+                new Vector(new[] { 5, 2, 3, 1, 3 },"B"),
+                new Vector(new[] { -2, 0, 1, -1, 2 },"AA"),
+                new Vector(new[] { 2, -1, 0, -2, 0 },"BB"),
                 new Vector(new[] { 2, 1, 2, -2, -1, 0, 1, 0, -1, 1 }),
                 new Vector(new[] { 2, -2, 1, 2, 1, -1, 0, 2, -1, 1 }),
                 new Vector(new[] { 1, 1, -2, 0, -2, -2, 2, 2, 1, 2 }),
                 new Vector(new[] { 1, 0, -2, 1, 2, 2, 1, 0, -1, -2 }, "Closest"),
                 new Vector(new[] { 1, -1, 1, 1, 2, 0, 2, 1, 0, 1 }),
-                new Vector(new[] { 2, 1, -2, 1, 0, 3, 3, 3, 3, 3 }, "Guess"),
+                new Vector(new[] { 2, 1, -2, 1, 0, 9, 9, 9, 9, 9 }, "Guess"),
                 new Vector(new[] { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 }, "I Vector"),
-                new Vector(new[] {  2, 1, -2, 1, 0, 0, -1, 2, 1,1}, "Actual"),
+                new Vector(new[] {  2, 1, -2, 1, 0, 0, 1, 2, 1,1}, "Actual"),
 
 
             };
@@ -41,10 +45,7 @@ namespace Linear_Algebra_Application
             vectorList.Items.Add(vector);
         }
 
-        private void vectorList_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
+        private void vectorList_SelectedIndexChanged(object sender, EventArgs e) { }
 
         private void button2_Click(object sender, EventArgs e)
         {

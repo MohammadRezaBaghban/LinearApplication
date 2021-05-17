@@ -14,7 +14,7 @@ namespace Linear_Algebra_Application
             var sum = 0;
             for (int i = 0; i < array1.Length; i++)
             {
-                if (array1[i] != 3 && array2[i] !=3)
+                if (array1[i] != 9 && array2[i] !=9)
                     sum += array1[i] * array2[i];
             }
             return sum;
@@ -29,7 +29,7 @@ namespace Linear_Algebra_Application
             var length = compelete ? 5 : array.Length;
             for (int i = 0; i < length; i++)
             {
-                if(array[i]!=3 )
+                if(array[i]!=9 )
                     sum += (int)Math.Pow(array[i], 2);
             }
             return sum;
@@ -37,7 +37,7 @@ namespace Linear_Algebra_Application
 
         public static double Angle_Two_Vector(int[] array1, int[] array2)
         {
-            var guessing = array1.Contains(3) || array2.Contains(3);
+            var guessing = array1.Contains(9) || array2.Contains(9);
             var numerator = Dot_Product(array1, array2);
             var lengthA = Vector_Length(array1, guessing);
             var lengthB = Vector_Length(array2, guessing);
